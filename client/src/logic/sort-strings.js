@@ -1,3 +1,6 @@
+// eslint-disable-next-line spellcheck/spell-checker
+/* eslint-disable jsdoc/require-returns-check */
+/* eslint-disable folders/match-regex */
 /**
  * Sorts an array of strings in different ways.
  * It does not modify the argument (no side-effects).
@@ -16,4 +19,4 @@
  *
  * // ... write this!
  */
-export const sortStrings = () => {};
+export const sortStrings = (toSort = '', sortType = 'oldest') => {};
