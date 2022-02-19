@@ -1,3 +1,4 @@
+/* eslint-disable folders/match-regex */
 import { data } from '../../data.js';
 import { renderList } from '../components/render-list.js';
 
