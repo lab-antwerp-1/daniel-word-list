@@ -94,7 +94,7 @@ This site will be developed through the following issues:
 
 ---
 
-3- Displaying list:
+4- Displaying list:
 
 - As a user I can see the list with all items.
   - [ ] _the current list is displayed with all current stored items_
@@ -119,7 +119,7 @@ This site will be developed through the following issues:
 
 ---
 
-4- Sorting the elements:
+5- Sorting the elements:
 
 - As a user I can sort the items in the list by length, alphabetical order or age (newest to oldest or vice versa).
   - [ ] _there is a dropdown with all the different display options_
