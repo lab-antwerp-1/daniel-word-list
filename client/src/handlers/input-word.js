@@ -1,3 +1,4 @@
+/* eslint-disable folders/match-regex */
 import { data } from '../../data.js';
 import { isWord } from '../logic/is-word.js';
 import { sortStrings } from '../logic/sort-strings.js';
@@ -24,20 +25,20 @@ export const inputWord = (event) => {
 
   /* -- use the input and data to implement the user story --
 
-    a user can add a new word to the list
-      given the input contains non-letters,
-        it will not be added
-        a warning is displayed
-      given the input contains only letters
-        it will be added to the words list
-        the list will be re-rendered
-    a user can remove words from the list
-      given the input is not in the list
-        a warning is posted
-      given the input is in the list
-        it is removed
-        the list is re-rendered
-  */
+					a user can add a new word to the list
+							given the input contains non-letters,
+									it will not be added
+									a warning is displayed
+							given the input contains only letters
+									it will be added to the words list
+									the list will be re-rendered
+					a user can remove words from the list
+							given the input is not in the list
+									a warning is posted
+							given the input is in the list
+									it is removed
+									the list is re-rendered
+			*/
 
   const warnings = document.getElementById('warnings');
   warnings.innerText = '';
