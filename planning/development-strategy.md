@@ -86,12 +86,20 @@ This site will be developed through the following issues:
 
 - Use default properties.
 
+`3- JS: Components`
+
+`4- JS: Logic`
+
+`5- JS: Handlers`
+
 ---
 
-3- Displaying list:
+4- Displaying list:
 
 - As a user I can see the list with all items.
   - [ ] _the current list is displayed with all current stored items_
+
+**Issues:**
 
 `1- HTML:`
 
@@ -103,12 +111,20 @@ This site will be developed through the following issues:
 
 - [ ] Use `border` to create a box that will contain all items and apply it to the `ul` element.
 
+`3- JS: Components`
+
+`4- JS: Logic`
+
+`5- JS: Handlers`
+
 ---
 
-4- Sorting the elements:
+5- Sorting the elements:
 
 - As a user I can sort the items in the list by length, alphabetical order or age (newest to oldest or vice versa).
   - [ ] _there is a dropdown with all the different display options_
+
+**Issues:**
 
 `1- HTML:`
 
@@ -118,3 +134,9 @@ This site will be developed through the following issues:
 `2- CSS:`
 
 - Use default values.
+
+`3- JS: Components`
+
+`4- JS: Logic`
+
+`5- JS: Handlers`
