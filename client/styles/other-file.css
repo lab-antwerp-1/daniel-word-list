@@ -5,3 +5,13 @@
 #header1 {
   text-align: center;
 }
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+#input-form {
+  display: flex;
+  flex-direction: column;
+}
