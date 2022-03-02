@@ -1,3 +1,6 @@
+// eslint-disable-next-line spellcheck/spell-checker
+/* eslint-disable jsdoc/require-returns-check */
+/* eslint-disable folders/match-regex */
 /**
  * Sorts an array of strings in different ways.
  * It does not modify the argument (no side-effects).
@@ -16,4 +19,31 @@
  *
  * // ... write this!
  */
-export const sortStrings = () => {};
+export const sortStrings = (toSort = '', sortType = 'oldest') => {
+  const tempArray = [...toSort];
+
+  const sortLength = (par1, par2) => {
+    return par1.length - par2.length;
+  };
+
+  const sortCase = (par1, par2) => {
+    return par1.localeCompare(par2);
+  };
+
+  if (sortType === 'newest') {
+    return tempArray.reverse();
+  }
+  if (sortType === 'a') {
+    return tempArray.sort(sortCase);
+  }
+  if (sortType === 'z') {
+    return tempArray.sort(sortCase).reverse();
+  }
+  if (sortType === 'shortest') {
+    return tempArray.sort(sortLength);
+  }
+  if (sortType === 'longest') {
+    return tempArray.sort(sortLength).reverse();
+  }
+  return tempArray;
+};
