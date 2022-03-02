@@ -1,3 +1,5 @@
+// eslint-disable-next-line spellcheck/spell-checker
+/* eslint-disable sonarjs/no-duplicated-branches */
 /* eslint-disable folders/match-regex */
 import { data } from '../../data.js';
 import { isWord } from '../logic/is-word.js';
@@ -20,8 +22,8 @@ export const inputWord = (event) => {
   }
 
   /* -- gather user input from DOM -- */
-  const text = event.target.form.text.value;
-  const action = event.target.value;
+  const text = event.target.form.text.value; // typed text
+  const action = event.target.value; // which button
 
   /* -- use the input and data to implement the user story --
 
@@ -45,8 +47,18 @@ export const inputWord = (event) => {
 
   if (action === 'add') {
     // ... write some code ...
+    if (!isWord(text)) {
+      warnings.innerText = `${text} is not a word`;
+    } else {
+      data.words.push(text);
+    }
   } else if (action === 'remove') {
     // ... write some code ...
+    if (!data.words.includes(text)) {
+      warnings.innerText = `${text} is not in the list`;
+    } else {
+      data.words.splice(data.words.indexOf(text), 1);
+    }
   }
 
   /* -- render new words -- */

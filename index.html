@@ -11,19 +11,34 @@
 </head>
 
 <body>
-    <h1 id="header1">Daniel's list maker</h1>
+
     <div id="root">
-        <form id="input-form">
-            <input name="text" placeholder="new word" />
-            <input type="button" value="add" />
-            <input type="button" value="remove" />
-        </form>
+        <h1 class="header1">Daniel's list maker</h1>
+        <div class="form-container">
+            <form id="input-form">
+                <input name="text" placeholder="New word" id="box" />
+                <input type="button" value="add" />
+                <input type="button" value="remove" />
+            </form>
+        </div>
         <code id="warnings" class="warning"></code>
         <br />
 
         <!-- Sort -->
-
+        <div>
+            <label for="select">Sort by:</label>
+            <select class="sort__input" id="sort-type">
+                <option value="oldest">old -> new</option>
+                <option value="newest">new -> old</option>
+                <option value="a">a -> z</option>
+                <option value="z">z -> a</option>
+                <option value="shortest">short -> long</option>
+                <option value="longest">long -> short</option>
+            </select>
+        </div>
         <!-- List container -->
+        <h2 class="input__lihead">Your List:</h2>
+        <div class="input__list" id="list-container"></div>
 
     </div>
 
