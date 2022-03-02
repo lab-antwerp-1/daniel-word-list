@@ -23,6 +23,7 @@ export const sortWords = (event) => {
   */
 
   // ... write some code ...
+  const sorted = sortStrings(data.words, howToSort);
 
   /* -- render new words -- */
   const newList = renderList(sorted);
